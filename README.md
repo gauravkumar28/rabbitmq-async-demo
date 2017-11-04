@@ -1,5 +1,9 @@
 # README
-
+create rabbitmq-async.rb  in config/initializers and paste 
+``` ruby
+require 'yaml'
+$consumer_config = YAML.load_file("#{Rails.root}/config/consumer.yml")
+```
 ##consumer.yml
 ```ruby
 consumer:
