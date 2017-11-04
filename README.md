@@ -1,7 +1,7 @@
 # README
 
 ##consumer.yml
-
+```ruby
 consumer:
   user:
     routing_key: "myroute1"
@@ -19,7 +19,7 @@ consumer:
     routing_key: "myroute4"
     self_exchange: "selfexchange4"
     queue: "myqueue4"
-    
+ ```  
  ## Rake task to launch consumers
  ```ruby
   rake rabbitmq:consumer name=order
